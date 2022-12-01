@@ -16,14 +16,7 @@ time_point = ['years', 'year', 'weeks', 'week', 'seconds', 'second', 'period', '
 
 relative_words = ['which', 'who', 'that', 'whose', 'whom', 'where', 'what']
 
-# verb phrases that might not be parsed correctly by spacy
-#verb_chunk = {'take place': 'occur', 'take steps': 'act', 'take measures': 'act', 'take appropriate measures': 'act', 'take into account': 'consider', 'taken into account': 'considered'}
 
-# GDPR glossary that might not be chunked as wished
-#gdpr_chunk = {'restriction on processing': 'restriction', 'right of access': 'right', 'special categories of personal data': 'special categories', 'binding corporate rules': 'corporate rules'}
-
-# simplifications of certain word chunks to be made before parsing (preprocessing)
-#simplifications = verb_chunk | gdpr_chunk
 
 
 # Phrase is a list of tokens that would represent e.g. a subject phrase, etc.
