@@ -3,15 +3,7 @@
 ## Overview
 
 ### Purpose
-This repository contains the implementation for the Bachelor's Thesis *Phrase Extraction for In-Depth Comparison of Regulatory Documents and Their Realizations*.
-
-The aim of this project is to help automate legal compliancy check between regulatory text and their realizations, such as for GDPR and Privacy Policy texts. More specifically, it aims to automatically extract syntactically and semantically relevant phrases from sentences, from which phrase-to-phrase comparison between sentences could be done.
-
-### The 3 Methods
-We present three different methods, Method A, Method B and Method C:  
-Method A is a hand-engineered algorithm based on dependency tree parsing, and is the most accurate and robust out of the three.  
-Method B is a simple machine learning method that is the most efficient to run, but has low accuracy.  
-Method C is also a machine learning method that combines the ideas of the former two approaches (dependency tree parsing and trainable span categorizer) to find a balanced trade-off between accuracy and complexity. It achieves decent results while not being as hard to understand as Method A.
+This repository contains a part of Elsa Fernandas implementation for the Bachelor's Thesis *Phrase Extraction for In-Depth Comparison of Regulatory Documents and Their Realizations*.
 
 ### What's included?
 - `phrase_extraction.py`: Implementation of Method A. You must import this script in order to use Method A.
@@ -23,16 +15,12 @@ Method C is also a machine learning method that combines the ideas of the former
 - `utils.py`: Contains many helper classes, functions and data used by Method A.
 
 ## Setup
-
 This project uses Python 3.9 and [spaCy](https://spacy.io/usage) v3.4, but it should be compatible with similar versions as well. It is recommended to use a virtual environment such as Anaconda. To download and install spaCy and the required pretrained transformer model, run the following:
-
 ```
 pip install -U pip setuptools wheel
 pip install -U spacy
 python -m spacy download en_core_web_trf
 ```
-
-Optionally, if you plan on annotating data, install [Prodigy](https://prodi.gy/) - Academic License can be requested by emailing contact@explosion.ai.
 
 
 ## Creating the Models for Method A, B, C
